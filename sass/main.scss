@@ -4,15 +4,8 @@
     box-sizing: border-box;
 }
 
-@mixin flexbox($content:center,$items:center) {
-    display: flex;
-    justify-content: $content;
-    align-items: $items;
-    
-    
-}
 
-
+@import "../sass/mixins/mixins";
 
 .top{
     @include flexbox(space-around);
@@ -44,6 +37,7 @@
            }
            &:hover i{
             transform: translateX(20px);
+            
        }
     }
 }
@@ -124,6 +118,7 @@
                 &:nth-child(5){
                     border-bottom: none;
                 }
+                
             }
         }
     }
